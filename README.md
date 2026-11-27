@@ -25,7 +25,8 @@ No dataset is provided. Your agent learns by interacting with the engine.
    python validate.py --docker --image devforge-doom   # installs requirements.txt, then runs sandboxed like the scorer
    ```
 
-3. Replace the random baseline in `submission/agent.py` with your trained agent.
+3. Train the recurrent actor-critic in `submission/agent.py`; the checked-in `ppo_smoke.pt` is a
+   short two-update smoke checkpoint, not a gameplay-validated policy.
 4. Put weights in `submission/weights/` (Git LFS) and training code in `training/`.
 5. Run `python validate.py --docker` and submit your repo URL.
 
